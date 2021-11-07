@@ -31,11 +31,6 @@ async def _human_time_duration(seconds):
             parts.append('{} {}{}'
                          .format(amount, unit, "" if amount == 1 else "s"))
     return ', '.join(parts)
-
-@Client.on_message(filters.private & filters.command(["start"]))
-async def start(client,message):
-	insert(int(message.chat.id))
-	await message.reply_text
 	
 @Client.on_message(filters.command("ping"))
 async def ping_pong(client, m: Message):
