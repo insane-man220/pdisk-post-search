@@ -147,7 +147,6 @@ async def remove_username(new_List):
         plugins=plugins
     )
  
-
 async def addFooter(str):
     footer = """
 
