@@ -135,15 +135,6 @@ async def remove_username(new_List):
         if('@' in i or 't.me' in i or 'https://bit.ly/3m4gabB' in i or 'https://bit.ly/pdisk_tuts' in i or 'telegra.ph' in i):
             new_List.remove(i)
     return new_List
- 
-
-async def addFooter(str):
-    footer = """
-
-━━━━━━━━━━━━━━━
-⭐️JOIN CHANNEL ➡️ t.me/""" + CHANNEL
-    return str + footer
-  
   if __name__ == "__main__" :
     plugins = dict(
         root="plugins"
@@ -155,6 +146,14 @@ async def addFooter(str):
         api_id=API_ID,
         plugins=plugins
     )
+ 
 
-    app.run()
+async def addFooter(str):
+    footer = """
+
+━━━━━━━━━━━━━━━
+⭐️JOIN CHANNEL ➡️ t.me/""" + CHANNEL
+    return str + footer
+
+app.run()
 bot.run()
