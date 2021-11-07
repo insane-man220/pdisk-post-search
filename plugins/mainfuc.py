@@ -35,7 +35,9 @@ async def _human_time_duration(seconds):
 @Client.on_message(filters.private & filters.command(["start"]))
 async def start(client,message):
 	insert(int(message.chat.id))
-	await message.reply_text("Hello iam Pdisk Uploader Bot\nMade with love by @mrlokaman",reply_to_message_id = message.message_id,reply_markup=InlineKeyboardMarkup([ [ InlineKeyboardButton("Support 🇮🇳" ,url="https://t.me/lntechnical") ], [InlineKeyboardButton("Subscribe 🧐", url="https://youtube.com/c/LNtechnical") ]  ]  ) 
+	await message.reply_text(
+        f"**𝗛𝗘𝗟𝗟𝗢🎈{message.chat.first_name}!**\n\n"
+        "𝐈'𝐦 𝐚 𝐏𝐝𝐢𝐬𝐤 𝐔𝐩𝐥𝐨𝐚𝐝𝐞𝐫 𝐛𝐨𝐭. 𝐉𝐮𝐬𝐭 𝐬𝐞𝐧𝐝 𝐦𝐞 𝐥𝐢𝐧𝐤 𝐨𝐫 𝐅𝐮𝐥𝐥 𝐩𝐨𝐬𝐭... \n 𝐓𝐡𝐢𝐬 𝐛𝐨𝐭 𝐢𝐬 𝐦𝐚𝐝𝐞 𝐛𝐲 @URS_BOND 💖",reply_to_message_id = message.message_id,reply_markup=InlineKeyboardMarkup([ [ InlineKeyboardButton("Support 🇮🇳" ,url="https://t.me/HindiMoviesV2") ], [InlineKeyboardButton("Subscribe 🧐", url="https://t.me/HindiMoviesV2") ]  ]  ) 
         )
 	
 @Client.on_message(filters.command("ping"))
