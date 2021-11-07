@@ -94,7 +94,7 @@ async def pdisk_up(link):
         title_new = os.path.basename(title_new.path)
         title_pdisk = title_new  +' '+ '@' + CHANNEL
     res = requests.get(
-        'http://linkapi.net/open/create_item?link_type=link&content_src=' + link + '&source=2000&cover_url='+THUMB_URL+'&api_key=' + PDISK_API_KEY + '&dir_id=0&title=' + title_pdisk + '&description=Join_' + CHANNEL + '_for_more_like_this')
+        'http://linkapi.net/open/create_item?link_type=link&content_src=' + link + '&source=2000&cover_url='+THUMB_URL+'&api_key=' + PDISK_API_KEY + '&dir_id=0&title=' + title_pdisk + '&description=Join_' JOIN US ON TELEGRAM '@'+ + CHANNEL + '_for_more_like_this')
     data = res.json()
     data = dict(data)
     print(data)
