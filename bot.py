@@ -10,7 +10,6 @@ import requests
 import re
 
 API_ID = environ.get('API_ID')
-TOKEN = os.environ.get("TOKEN", "")
 API_HASH = environ.get('API_HASH')
 BOT_TOKEN = environ.get('BOT_TOKEN')
 PDISK_API_KEY = environ.get('PDISK_API_KEY')
