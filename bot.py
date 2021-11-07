@@ -23,6 +23,11 @@ bot = Client('pdisk bot',
              sleep_threshold=0)
 
 
+@bot.on_message(filters.command('start') & filters.private)
+async def start(bot, message):
+    await message.reply
+
+
 @bot.on_message(filters.text & filters.private)
 async def pdisk_uploader(bot, message):
     new_string = str(message.text)
