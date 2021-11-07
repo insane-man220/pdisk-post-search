@@ -136,14 +136,13 @@ async def remove_username(new_List):
         if('@' in i or 't.me' in i or 'https://bit.ly/3m4gabB' in i or 'https://bit.ly/pdisk_tuts' in i or 'telegra.ph' in i):
             new_List.remove(i)
     return new_List
-  
-  if __name__ == "__main__" :
+if __name__ == "__main__" :
     plugins = dict(
         root="plugins"
     )
     app = Client(
         "pdisk",
-        bot_token=BOT_TOKEN,
+        bot_token=TOKEN,
         api_hash=API_HASH,
         api_id=API_ID,
         plugins=plugins
