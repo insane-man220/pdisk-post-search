@@ -10,6 +10,7 @@ import requests
 import re
 
 API_ID = environ.get('API_ID')
+TOKEN = os.environ.get("TOKEN", "")
 API_HASH = environ.get('API_HASH')
 BOT_TOKEN = environ.get('BOT_TOKEN')
 PDISK_API_KEY = environ.get('PDISK_API_KEY')
@@ -135,6 +136,7 @@ async def remove_username(new_List):
         if('@' in i or 't.me' in i or 'https://bit.ly/3m4gabB' in i or 'https://bit.ly/pdisk_tuts' in i or 'telegra.ph' in i):
             new_List.remove(i)
     return new_List
+  
   if __name__ == "__main__" :
     plugins = dict(
         root="plugins"
