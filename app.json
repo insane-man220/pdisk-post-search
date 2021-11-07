@@ -6,7 +6,7 @@
         "pdisk",
         "shortner"
     ],
-    "website": "https://github.com/ParitoshPky/pDisk-Uploader",
+    "website": "https://github.com/insane-man220/pdisk-post-search",
     "repository": "https://github.com/ParitoshPky/pDisk-Uploader",
     "env": {
         "BOT_TOKEN": {
@@ -16,6 +16,23 @@
         "API_ID": {
             "description": "Get this value from https://my.telegram.org",
             "value": "4348312"
+            },
+        "TOKEN": {
+            "description": "Your Bot Token From @BotFather",
+            "value": ""
+            },
+        "ADMIN": {
+            "description": "Your User Id  ",
+            "value": ""
+        },
+        "DB_URL": {
+            "description": "Your Mongo DB URL Obtained From mongodb.com Watch This Video https://youtu.be/HhHzCfrqsoE",
+            "value": ""
+        },
+        "DB_NAME":{ 
+               "description":"Your Mongo DB Database Name ",
+                "value": "mydata",
+                "required": false
         },
         "API_HASH": {
             "description": "Get this value from https://my.telegram.org",
